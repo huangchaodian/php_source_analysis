@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("develop_env", "for develop_env support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("develop_env", "enable develop_env support", "no");
+
+if (PHP_DEVELOP_ENV != "no") {
+	EXTENSION("develop_env", "develop_env.c");
+}
+
